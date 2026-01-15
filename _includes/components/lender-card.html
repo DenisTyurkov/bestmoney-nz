@@ -1,0 +1,143 @@
+{% comment %}
+  Lender Card Component
+  Usage: {% include components/lender-card.html lender=lender rank=1 show_rank=true %}
+{% endcomment %}
+
+{% assign l = include.lender %}
+{% assign cta_url = l.affiliate_url %}
+{% if cta_url == nil or cta_url == '' or cta_url == '#' %}
+  {% assign cta_url = l.website %}
+{% endif %}
+
+<div class="lender-card {% if l.is_top_pick %}lender-card--highlight{% endif %}"
+     data-lender-id="{{ l.id }}"
+     data-apr-min="{{ l.apr_min }}"
+     data-loan-amount-min="{{ l.loan_amount_min }}"
+     data-loan-amount-max="{{ l.loan_amount_max }}"
+     data-min-income="{{ l.min_income }}"
+     data-credit-score="{{ l.credit_score_min }}">
+
+  <!-- Rank Badge -->
+  {% if include.show_rank %}
+  <div class="lender-rank">
+    <span class="rank-number">{{ include.rank }}</span>
+  </div>
+  {% endif %}
+
+  <!-- Promotional Badges -->
+  {% if l.badges.size > 0 %}
+  <div class="lender-badges">
+    {% for badge in l.badges limit:2 %}
+      <span class="badge badge--{{ badge.type }}">{{ badge.label }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+
+  <div class="lender-card-content">
+    <!-- Left Section: Logo & Basic Info -->
+    <div class="lender-left">
+      {% if l.logo %}
+      <img src="{{ l.logo }}" alt="{{ l.name }} logo" class="lender-logo" loading="lazy">
+      {% else %}
+      <div class="lender-logo-placeholder" style="width: 100px; height: 40px; background: #f0f0f0; border-radius: 4px; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #666;">{{ l.name | truncate: 10 }}</div>
+      {% endif %}
+      <h3 class="lender-name">{{ l.name }}</h3>
+    </div>
+
+    <!-- Middle Section: Features & Details -->
+    <div class="lender-middle">
+      <ul class="lender-features">
+        {% for feature in l.features limit:3 %}
+          <li>
+            <svg class="icon-check" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+            </svg>
+            {{ feature }}
+          </li>
+        {% endfor %}
+      </ul>
+
+      {% if l.bottom_line %}
+      <p class="lender-bottom-line">{{ l.bottom_line }}</p>
+      {% endif %}
+
+      <!-- Trustpilot Rating -->
+      {% if l.trustpilot_rating %}
+      <div class="trustpilot-rating">
+        <div class="trustpilot-stars">
+          {% assign full_stars = l.trustpilot_rating | floor %}
+          {% assign has_half = l.trustpilot_rating | modulo: 1 %}
+          {% for i in (1..5) %}
+            {% if i <= full_stars %}
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            {% elsif has_half > 0.3 and i == full_stars | plus: 1 %}
+            <svg class="star" viewBox="0 0 24 24" fill="currentColor" style="opacity: 0.5;">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            {% else %}
+            <svg class="star star--empty" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+            {% endif %}
+          {% endfor %}
+        </div>
+        <span class="trustpilot-count">{{ l.trustpilot_rating }} ({{ l.trustpilot_reviews }} reviews)</span>
+      </div>
+      {% endif %}
+    </div>
+
+    <!-- Right Section: Score & CTA -->
+    <div class="lender-right">
+      <!-- BestMoney Score -->
+      {% if l.bestmoney_score %}
+      <div class="rating-badge {% if l.bestmoney_score >= 9 %}rating-badge--excellent{% elsif l.bestmoney_score >= 8 %}rating-badge--very-good{% else %}rating-badge--good{% endif %}">
+        <span class="rating-score">{{ l.bestmoney_score }}</span>
+        <span class="rating-label">BestMoney Score</span>
+        <div class="rating-bar">
+          <div class="rating-bar-fill" style="width: {{ l.bestmoney_score | times: 10 }}%"></div>
+        </div>
+      </div>
+      {% endif %}
+
+      <!-- Social Proof -->
+      {% if l.weekly_visitors %}
+      <div class="social-proof">
+        <svg class="icon-users" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <span><strong>{{ l.weekly_visitors }}</strong> visited</span>
+      </div>
+      {% endif %}
+
+      <!-- Key Stats -->
+      <div class="lender-stats">
+        {% if l.apr_display %}
+        <div class="stat">
+          <span class="stat-label">APR</span>
+          <span class="stat-value">{{ l.apr_display }}</span>
+        </div>
+        {% endif %}
+        {% if l.loan_amount_max %}
+        <div class="stat">
+          <span class="stat-label">Up to</span>
+          <span class="stat-value">${{ l.loan_amount_max | divided_by: 1000 }}k</span>
+        </div>
+        {% endif %}
+      </div>
+
+      <!-- CTA Button -->
+      <a href="{{ cta_url }}"
+         class="btn btn-cta"
+         data-track-click="{{ l.id }}"
+         target="_blank"
+         rel="noopener sponsored">
+        Get My Rate
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>

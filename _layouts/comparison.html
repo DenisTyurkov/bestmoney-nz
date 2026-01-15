@@ -1,0 +1,105 @@
+---
+layout: default
+body_class: "page-comparison"
+---
+
+<div class="comparison-page">
+  <!-- Page Header -->
+  <header class="comparison-header">
+    <div class="container">
+      <h1>{{ page.title }}</h1>
+      <p class="subtitle">{{ page.description }}</p>
+      <p class="last-updated">Last updated: {{ page.last_updated | date: "%B %d, %Y" }}</p>
+    </div>
+  </header>
+
+  <!-- Intro Section -->
+  {% if page.intro %}
+  <section class="comparison-intro">
+    <div class="container">
+      <div class="intro-content">
+        <p>{{ page.intro }}</p>
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <!-- Filter Section -->
+  <section class="filter-section">
+    <div class="container">
+      {% include components/filter-bar.html vertical=page.vertical %}
+    </div>
+  </section>
+
+  <!-- Results Meta -->
+  <div class="container">
+    <div class="results-meta">
+      <span class="results-count">
+        Showing <strong id="results-count">{% if page.vertical == 'car_insurance' %}{{ site.data.car_insurance.providers.providers | size }}{% else %}{{ site.data[page.vertical].lenders.lenders | size }}{% endif %}</strong> providers
+      </span>
+      {% if page.weekly_visitors %}
+      <div class="social-proof">
+        <svg class="icon-users" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+        </svg>
+        <span><strong>{{ page.weekly_visitors | number_with_delimiter }}</strong> people compared this week</span>
+      </div>
+      {% endif %}
+    </div>
+  </div>
+
+  <!-- Main Comparison List -->
+  <section class="comparison-list">
+    <div class="container">
+      {% if page.vertical == 'car_insurance' %}
+        {% assign providers = site.data.car_insurance.providers.providers %}
+        {% for provider in providers %}
+          {% include components/insurance-card.html provider=provider rank=forloop.index show_rank=true %}
+        {% endfor %}
+      {% else %}
+        {% assign lenders = site.data[page.vertical].lenders.lenders %}
+        {% for lender in lenders %}
+          {% include components/lender-card.html lender=lender rank=forloop.index show_rank=true %}
+        {% endfor %}
+      {% endif %}
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  {% if page.faqs %}
+  <section class="faq-section">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+      <div class="faq-list">
+        {% for faq in page.faqs %}
+        <div class="faq-item">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-{{ forloop.index }}">
+            {{ faq.question }}
+            <svg class="icon-chevron" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+            </svg>
+          </button>
+          <div class="faq-answer" id="faq-{{ forloop.index }}" hidden>
+            {{ faq.answer }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  {{ content }}
+</div>
+
+<!-- FAQ Toggle Script -->
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+  button.addEventListener('click', () => {
+    const expanded = button.getAttribute('aria-expanded') === 'true';
+    button.setAttribute('aria-expanded', !expanded);
+    const answer = document.getElementById(button.getAttribute('aria-controls'));
+    answer.hidden = expanded;
+  });
+});
+</script>

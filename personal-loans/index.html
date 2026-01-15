@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Personal Loans NZ"
+description: "Compare personal loans from New Zealand's top lenders. Find competitive rates and flexible terms for your borrowing needs."
+permalink: /personal-loans/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Personal Loans NZ</h1>
+      <p class="page-hero-subtitle">Compare rates from New Zealand's leading personal loan providers</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2>Find the Right Personal Loan for You</h2>
+      <p>Whether you're consolidating debt, funding home improvements, or covering an unexpected expense, we'll help you compare options from NZ's top lenders.</p>
+      <a href="/personal-loans/compare-personal-loans/" class="btn btn-primary btn-lg" style="margin-top: 1rem;">
+        Compare Personal Loans
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Top Personal Loan Providers</h2>
+    <div class="lender-list preview">
+      {% assign personal_loans = site.data.personal_loans.lenders.lenders | slice: 0, 5 %}
+      {% for lender in personal_loans %}
+        {% include components/lender-card.html lender=lender rank=forloop.index show_rank=true %}
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/personal-loans/compare-personal-loans/" class="btn btn-secondary">
+        View All 10 Lenders
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>What to Consider When Choosing a Personal Loan</h2>
+
+      <h3>Interest Rate</h3>
+      <p>Personal loan rates in NZ range from about 8.99% to 29.99%. Your rate depends on your credit score, income, and the lender. Always compare the total cost, not just the monthly payment.</p>
+
+      <h3>Loan Term</h3>
+      <p>Terms typically range from 1-7 years. Shorter terms mean higher monthly payments but less interest overall. Longer terms lower your payments but cost more in interest.</p>
+
+      <h3>Fees</h3>
+      <p>Watch out for establishment fees, monthly service fees, and early repayment fees. Some lenders advertise low rates but charge high fees. Look at the total cost of the loan.</p>
+
+      <h3>Flexibility</h3>
+      <p>Can you make extra repayments without penalty? What happens if you need to skip a payment? Choose a loan that fits your financial situation.</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,107 @@
+---
+layout: default
+body_class: "page-home"
+---
+
+<!-- Hero Section -->
+<section class="hero hero--home">
+  <div class="container">
+    <div class="hero-content">
+      <h1 class="hero-title">{{ page.hero_title | default: "Your best financial decisions start here" }}</h1>
+      <p class="hero-subtitle">{{ page.hero_subtitle | default: "BestMoney NZ helps Kiwis compare loans and insurance to find the best deals" }}</p>
+      <div class="hero-cta">
+        <a href="/personal-loans/compare-personal-loans/" class="btn btn-cta btn-lg">Compare Personal Loans</a>
+        <a href="/car-loans/compare-car-loans/" class="btn btn-white btn-lg">Compare Car Loans</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Category Grid -->
+<section class="section" style="margin-top: -60px; position: relative; z-index: 10;">
+  <div class="container">
+    <div class="grid grid-3">
+      {% for vertical in site.verticals %}
+      <a href="{{ vertical.comparison_url }}" class="category-tile">
+        <div class="category-icon">
+          {% if vertical.slug == 'personal-loans' %}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+          {% elsif vertical.slug == 'car-loans' %}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 16V6a1 1 0 00-1-1H4a1 1 0 00-1 1v10a1 1 0 001 1h1m8-1a1 1 0 01-1 1H9m4-1V8a1 1 0 011-1h2.586a1 1 0 01.707.293l3.414 3.414a1 1 0 01.293.707V16a1 1 0 01-1 1h-1m-6-1a1 1 0 001 1h1M5 17a2 2 0 104 0m-4 0a2 2 0 114 0m6 0a2 2 0 104 0m-4 0a2 2 0 114 0" />
+          </svg>
+          {% elsif vertical.slug == 'car-insurance' %}
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+          </svg>
+          {% endif %}
+        </div>
+        <h3 class="category-title">{{ vertical.name }}</h3>
+        <p class="category-description">{{ vertical.description }}</p>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- Why Choose BestMoney NZ -->
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Why Kiwis Trust BestMoney NZ</h2>
+    <div class="grid grid-3">
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        </div>
+        <h3>Trusted Comparisons</h3>
+        <p>We compare products from New Zealand's leading banks, lenders, and insurance providers.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z" />
+          </svg>
+        </div>
+        <h3>Fast & Easy</h3>
+        <p>Compare rates in minutes, not hours. Our simple interface helps you find the best deal quickly.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="40" height="40">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+          </svg>
+        </div>
+        <h3>100% Free</h3>
+        <p>Our comparison service is completely free. No hidden fees, no obligations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Top Personal Loans Preview -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Top Personal Loan Providers in NZ</h2>
+    <p class="section-subtitle">Compare rates from New Zealand's leading personal loan providers</p>
+
+    <div class="lender-list preview">
+      {% assign personal_loans = site.data.personal_loans.lenders.lenders | slice: 0, 3 %}
+      {% for lender in personal_loans %}
+        {% include components/lender-card.html lender=lender rank=forloop.index show_rank=true compact=true %}
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/personal-loans/compare-personal-loans/" class="btn btn-primary btn-lg">
+        View All Personal Loans
+      </a>
+    </div>
+  </div>
+</section>
+
+{{ content }}

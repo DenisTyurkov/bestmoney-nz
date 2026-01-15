@@ -1,0 +1,63 @@
+<footer class="site-footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-content">
+      <!-- Brand Column -->
+      <div class="footer-brand">
+        <div class="footer-logo">
+          <svg width="140" height="28" viewBox="0 0 140 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <text x="0" y="22" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">Best</text>
+            <text x="42" y="22" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#16CA92">Money</text>
+            <text x="105" y="22" font-family="Inter, sans-serif" font-size="20" font-weight="700" fill="#FFFFFF">NZ</text>
+          </svg>
+        </div>
+        <p class="footer-tagline">Helping Kiwis make smarter financial decisions by comparing loans and insurance from New Zealand's top providers.</p>
+      </div>
+
+      <!-- Products -->
+      <div class="footer-nav">
+        <h4>Products</h4>
+        <ul>
+          <li><a href="/personal-loans/compare-personal-loans/">Personal Loans</a></li>
+          <li><a href="/car-loans/compare-car-loans/">Car Loans</a></li>
+          <li><a href="/car-insurance/compare-car-insurance/">Car Insurance</a></li>
+        </ul>
+      </div>
+
+      <!-- Company -->
+      <div class="footer-nav">
+        <h4>Company</h4>
+        <ul>
+          {% for link in site.data.navigation.footer.company %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="footer-nav">
+        <h4>Legal</h4>
+        <ul>
+          {% for link in site.data.navigation.footer.legal %}
+            <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+
+    <!-- Disclaimer -->
+    <div class="footer-disclaimer">
+      <p><strong>Disclaimer:</strong> BestMoney NZ is a comparison service, not a lender or insurance provider. The information provided is for general informational purposes only and should not be considered financial advice. Interest rates, terms, and eligibility criteria are subject to change without notice. Always read the product disclosure statement and consider seeking independent financial advice before making any financial decisions. BestMoney NZ may receive a commission from providers when you click through to their websites or apply for a product.</p>
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom">
+      <div class="footer-bottom-content">
+        <p class="footer-copyright">&copy; {{ 'now' | date: '%Y' }} BestMoney NZ. All rights reserved.</p>
+        <div class="footer-legal-links">
+          <a href="/privacy-policy/">Privacy</a>
+          <a href="/terms-of-service/">Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

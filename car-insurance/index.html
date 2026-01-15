@@ -1,0 +1,70 @@
+---
+layout: default
+title: "Car Insurance NZ"
+description: "Compare car insurance quotes from New Zealand's top providers. Find the right coverage at the best price."
+permalink: /car-insurance/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Car Insurance NZ</h1>
+      <p class="page-hero-subtitle">Compare quotes from New Zealand's leading car insurers</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2>Find the Right Car Insurance for You</h2>
+      <p>Whether you need comprehensive coverage for a new car or budget-friendly third party for an older vehicle, we'll help you compare your options.</p>
+      <a href="/car-insurance/compare-car-insurance/" class="btn btn-primary btn-lg" style="margin-top: 1rem;">
+        Compare Car Insurance
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Top Car Insurance Providers</h2>
+    <div class="lender-list preview">
+      {% assign car_insurance = site.data.car_insurance.providers.providers | slice: 0, 5 %}
+      {% for provider in car_insurance %}
+        {% include components/insurance-card.html provider=provider rank=forloop.index show_rank=true %}
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/car-insurance/compare-car-insurance/" class="btn btn-secondary">
+        View All 10 Providers
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>Understanding Car Insurance in NZ</h2>
+
+      <h3>Comprehensive Insurance</h3>
+      <p>The most complete coverage available. Protects your car and others from accidents, theft, fire, and weather damage. Recommended for newer or more valuable vehicles.</p>
+
+      <h3>Third Party, Fire & Theft</h3>
+      <p>Covers damage you cause to other people's property, plus protection if your car is stolen or damaged by fire. A middle-ground option for mid-value vehicles.</p>
+
+      <h3>Third Party Only</h3>
+      <p>The minimum recommended coverage. Only pays for damage you cause to other vehicles and property. Best for older cars with low value.</p>
+
+      <h3>Tips to Lower Your Premium</h3>
+      <ul>
+        <li>Choose a higher excess (if you can afford it at claim time)</li>
+        <li>Install approved security devices</li>
+        <li>Bundle with other insurance (home, contents)</li>
+        <li>Maintain a clean driving record</li>
+        <li>Compare quotes from multiple providers</li>
+      </ul>
+    </div>
+  </div>
+</section>

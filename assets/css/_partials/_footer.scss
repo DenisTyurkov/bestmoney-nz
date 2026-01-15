@@ -1,0 +1,141 @@
+// ==========================================================================
+// Footer
+// ==========================================================================
+
+.site-footer {
+  background: $color-bg-footer;
+  color: $color-text-inverse;
+  padding: $spacing-3xl 0 $spacing-xl;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr repeat(3, 1fr);
+  gap: $spacing-2xl;
+
+  @media (max-width: $breakpoint-lg) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Footer Brand Section
+.footer-brand {
+  @media (max-width: $breakpoint-lg) {
+    grid-column: span 2;
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    grid-column: span 1;
+  }
+}
+
+.footer-logo {
+  margin-bottom: $spacing-md;
+
+  img {
+    height: 32px;
+    width: auto;
+    filter: brightness(0) invert(1);
+  }
+}
+
+.footer-tagline {
+  font-size: $font-size-sm;
+  color: rgba($color-white, 0.8);
+  margin-bottom: $spacing-lg;
+  max-width: 300px;
+}
+
+// Footer Navigation
+.footer-nav {
+  h4 {
+    font-size: $font-size-sm;
+    font-weight: $font-weight-semibold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: $spacing-md;
+    color: rgba($color-white, 0.6);
+  }
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  li {
+    margin-bottom: $spacing-sm;
+  }
+
+  a {
+    font-size: $font-size-sm;
+    color: rgba($color-white, 0.9);
+    text-decoration: none;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+// Footer Bottom
+.footer-bottom {
+  margin-top: $spacing-2xl;
+  padding-top: $spacing-xl;
+  border-top: 1px solid rgba($color-white, 0.1);
+}
+
+.footer-bottom-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: $spacing-md;
+
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.footer-copyright {
+  font-size: $font-size-sm;
+  color: rgba($color-white, 0.6);
+  margin: 0;
+}
+
+.footer-legal-links {
+  display: flex;
+  gap: $spacing-lg;
+
+  a {
+    font-size: $font-size-sm;
+    color: rgba($color-white, 0.6);
+    text-decoration: none;
+    transition: color $transition-fast;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+// Disclaimer
+.footer-disclaimer {
+  margin-top: $spacing-lg;
+  padding: $spacing-md;
+  background: rgba($color-black, 0.2);
+  border-radius: $border-radius-sm;
+
+  p {
+    font-size: $font-size-xs;
+    color: rgba($color-white, 0.6);
+    line-height: $line-height-relaxed;
+    margin: 0;
+  }
+}

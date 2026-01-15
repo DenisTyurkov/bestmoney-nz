@@ -1,0 +1,22 @@
+<!-- Mobile Menu Toggle -->
+<script>
+(function() {
+  const toggle = document.querySelector('.mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+
+  if (toggle && menu) {
+    toggle.addEventListener('click', function() {
+      const isExpanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', !isExpanded);
+      menu.classList.toggle('is-open');
+      menu.setAttribute('aria-hidden', isExpanded);
+    });
+  }
+})();
+</script>
+
+<!-- Filter Functionality -->
+<script src="{{ '/assets/js/filters.js' | relative_url }}" defer></script>
+
+<!-- Analytics (placeholder) -->
+<script src="{{ '/assets/js/analytics.js' | relative_url }}" defer></script>

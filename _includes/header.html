@@ -1,0 +1,57 @@
+<header class="site-header" role="banner">
+  <div class="container">
+    <div class="header-content">
+      <!-- Logo -->
+      <a href="/" class="site-logo" aria-label="BestMoney NZ Home">
+        <svg width="180" height="36" viewBox="0 0 180 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <text x="0" y="26" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#225447">Best</text>
+          <text x="52" y="26" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#16CA92">Money</text>
+          <text x="130" y="26" font-family="Inter, sans-serif" font-size="24" font-weight="700" fill="#225447">NZ</text>
+        </svg>
+      </a>
+
+      <!-- Main Navigation -->
+      <nav class="main-nav" role="navigation" aria-label="Main navigation">
+        <ul class="nav-list">
+          {% for item in site.data.navigation.main %}
+            <li class="nav-item {% if item.children %}has-dropdown{% endif %}">
+              <a href="{{ item.url }}" class="nav-link">{{ item.title }}</a>
+              {% if item.children %}
+                <ul class="nav-dropdown">
+                  {% for child in item.children %}
+                    <li>
+                      <a href="{{ child.url }}">{{ child.title }}</a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <!-- Mobile Menu Toggle -->
+      <button class="mobile-menu-toggle" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <span class="hamburger"></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="mobile-menu" aria-hidden="true">
+    <nav class="mobile-nav">
+      {% for item in site.data.navigation.main %}
+        <div class="mobile-nav-item">
+          <a href="{{ item.url }}" class="mobile-nav-link">{{ item.title }}</a>
+          {% if item.children %}
+            <ul class="mobile-nav-dropdown">
+              {% for child in item.children %}
+                <li><a href="{{ child.url }}">{{ child.title }}</a></li>
+              {% endfor %}
+            </ul>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </nav>
+  </div>
+</header>

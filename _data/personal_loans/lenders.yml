@@ -1,0 +1,504 @@
+# Personal Loans Lenders Data - New Zealand
+vertical: "personal-loans"
+last_updated: "2026-01-14"
+
+lenders:
+  - id: "anz-personal-loan"
+    name: "ANZ Personal Loan"
+    slug: "anz-personal-loans"
+    logo: "/assets/images/logos/providers/anz.svg"
+    website: "https://www.anz.co.nz/personal/loans/"
+    affiliate_url: "#"
+
+    rank: 1
+    bestmoney_score: 9.6
+    is_top_pick: true
+    is_editors_choice: true
+
+    apr_min: 12.90
+    apr_max: 19.95
+    apr_display: "12.90% - 19.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 50000
+    loan_term_min: 6
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "No early repayment fees"
+      - "Online application in 10 minutes"
+      - "Same-day approval for existing customers"
+
+    tagline: "New Zealand's trusted bank for personal loans"
+    bottom_line: "Best for existing ANZ customers seeking competitive rates"
+
+    trustpilot_rating: 4.2
+    trustpilot_reviews: 1250
+    weekly_visitors: 2847
+
+    badges:
+      - type: "top-pick"
+        label: "Our Top Pick"
+      - type: "fast-approval"
+        label: "Fast Approval"
+
+    pros:
+      - "Competitive interest rates"
+      - "No application fees"
+      - "Flexible repayment terms"
+    cons:
+      - "Requires good credit score"
+      - "Must be NZ resident"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Regular income source"
+      - "Good credit history"
+
+  - id: "asb-personal-loan"
+    name: "ASB Personal Loan"
+    slug: "asb-personal-loans"
+    logo: "/assets/images/logos/providers/asb.svg"
+    website: "https://www.asb.co.nz/loans/personal-loan.html"
+    affiliate_url: "#"
+
+    rank: 2
+    bestmoney_score: 9.4
+    is_top_pick: false
+    is_editors_choice: true
+
+    apr_min: 13.45
+    apr_max: 18.95
+    apr_display: "13.45% - 18.95%"
+    loan_amount_min: 2000
+    loan_amount_max: 50000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 25000
+
+    features:
+      - "Competitive fixed rates"
+      - "No fees for extra repayments"
+      - "Online application available"
+
+    tagline: "Banking that supports your goals"
+    bottom_line: "Great for borrowers who want predictable fixed repayments"
+
+    trustpilot_rating: 4.0
+    trustpilot_reviews: 980
+    weekly_visitors: 2156
+
+    badges:
+      - type: "editors-choice"
+        label: "Editor's Choice"
+
+    pros:
+      - "Fixed rate certainty"
+      - "No extra repayment fees"
+      - "Strong online banking"
+    cons:
+      - "Higher minimum loan amount"
+      - "Stricter approval criteria"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $25,000"
+      - "Good credit history"
+
+  - id: "westpac-personal-loan"
+    name: "Westpac Personal Loan"
+    slug: "westpac-personal-loans"
+    logo: "/assets/images/logos/providers/westpac.svg"
+    website: "https://www.westpac.co.nz/personal/loans/"
+    affiliate_url: "#"
+
+    rank: 3
+    bestmoney_score: 9.2
+    is_top_pick: false
+
+    apr_min: 13.90
+    apr_max: 21.95
+    apr_display: "13.90% - 21.95%"
+    loan_amount_min: 2000
+    loan_amount_max: 70000
+    loan_term_min: 6
+    loan_term_max: 84
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "Higher loan amounts up to $70k"
+      - "Longer loan terms available"
+      - "Relationship pricing for existing customers"
+
+    tagline: "Supporting Kiwis for over 150 years"
+    bottom_line: "Best for larger loans with flexible term options"
+
+    trustpilot_rating: 3.9
+    trustpilot_reviews: 856
+    weekly_visitors: 1923
+
+    badges: []
+
+    pros:
+      - "Highest maximum loan amount"
+      - "Terms up to 7 years"
+      - "Discounts for existing customers"
+    cons:
+      - "Higher maximum rates"
+      - "Slower approval process"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $30,000"
+      - "Good to excellent credit"
+
+  - id: "kiwibank-personal-loan"
+    name: "Kiwibank Personal Loan"
+    slug: "kiwibank-personal-loans"
+    logo: "/assets/images/logos/providers/kiwibank.svg"
+    website: "https://www.kiwibank.co.nz/personal-banking/loans/"
+    affiliate_url: "#"
+
+    rank: 4
+    bestmoney_score: 9.1
+    is_top_pick: false
+
+    apr_min: 13.50
+    apr_max: 19.50
+    apr_display: "13.50% - 19.50%"
+    loan_amount_min: 1000
+    loan_amount_max: 40000
+    loan_term_min: 6
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 20000
+
+    features:
+      - "100% NZ owned bank"
+      - "Competitive rates"
+      - "Community-focused banking"
+
+    tagline: "Kiwis banking Kiwis"
+    bottom_line: "Great choice for those who want to bank with a NZ-owned institution"
+
+    trustpilot_rating: 4.1
+    trustpilot_reviews: 723
+    weekly_visitors: 1654
+
+    badges: []
+
+    pros:
+      - "NZ owned and operated"
+      - "Good customer service"
+      - "Lower income requirements"
+    cons:
+      - "Lower maximum loan amount"
+      - "Fewer branches"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $20,000"
+      - "Good credit history"
+
+  - id: "harmoney-personal-loan"
+    name: "Harmoney"
+    slug: "harmoney-personal-loans"
+    logo: "/assets/images/logos/providers/harmoney.svg"
+    website: "https://www.harmoney.co.nz/"
+    affiliate_url: "#"
+
+    rank: 5
+    bestmoney_score: 9.0
+    is_top_pick: false
+
+    apr_min: 8.99
+    apr_max: 29.99
+    apr_display: "8.99% - 29.99%"
+    loan_amount_min: 2000
+    loan_amount_max: 70000
+    loan_term_min: 24
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 25000
+
+    features:
+      - "Lowest starting rates in NZ"
+      - "Quick online application"
+      - "Accepts fair credit"
+
+    tagline: "Personal loans made simple"
+    bottom_line: "Best for online-savvy borrowers seeking the lowest possible rate"
+
+    trustpilot_rating: 4.3
+    trustpilot_reviews: 2341
+    weekly_visitors: 3102
+
+    badges:
+      - type: "best-rate"
+        label: "Best Rates"
+
+    pros:
+      - "Lowest rates from 8.99%"
+      - "100% online process"
+      - "Accepts fair credit"
+    cons:
+      - "Higher maximum rates"
+      - "No branch support"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Aged 18-70 years"
+      - "Fair to excellent credit"
+
+  - id: "bnz-personal-loan"
+    name: "BNZ Personal Loan"
+    slug: "bnz-personal-loans"
+    logo: "/assets/images/logos/providers/bnz.svg"
+    website: "https://www.bnz.co.nz/personal-banking/loans/"
+    affiliate_url: "#"
+
+    rank: 6
+    bestmoney_score: 8.9
+    is_top_pick: false
+
+    apr_min: 13.90
+    apr_max: 19.90
+    apr_display: "13.90% - 19.90%"
+    loan_amount_min: 3000
+    loan_amount_max: 50000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "Strong mobile banking app"
+      - "Fixed or variable rates"
+      - "Existing customer benefits"
+
+    tagline: "Be good with money"
+    bottom_line: "Solid choice for BNZ customers who value digital banking"
+
+    trustpilot_rating: 3.8
+    trustpilot_reviews: 654
+    weekly_visitors: 1432
+
+    badges: []
+
+    pros:
+      - "Excellent mobile app"
+      - "Rate options"
+      - "Established bank"
+    cons:
+      - "Higher minimum loan"
+      - "Less competitive rates"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $30,000"
+      - "Good credit history"
+
+  - id: "sbs-personal-loan"
+    name: "SBS Bank Personal Loan"
+    slug: "sbs-personal-loans"
+    logo: "/assets/images/logos/providers/sbs.svg"
+    website: "https://www.sbsbank.co.nz/"
+    affiliate_url: "#"
+
+    rank: 7
+    bestmoney_score: 8.7
+    is_top_pick: false
+
+    apr_min: 11.95
+    apr_max: 18.95
+    apr_display: "11.95% - 18.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 30000
+    loan_term_min: 6
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 25000
+
+    features:
+      - "Competitive rates"
+      - "Customer-owned bank"
+      - "Personal service"
+
+    tagline: "Your bank, your way"
+    bottom_line: "Good for those who prefer a smaller, customer-owned bank"
+
+    trustpilot_rating: 4.0
+    trustpilot_reviews: 312
+    weekly_visitors: 876
+
+    badges: []
+
+    pros:
+      - "Customer-owned"
+      - "Competitive rates"
+      - "Personal service"
+    cons:
+      - "Lower loan limits"
+      - "Fewer locations"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $25,000"
+      - "Good credit"
+
+  - id: "nectar-personal-loan"
+    name: "Nectar"
+    slug: "nectar-personal-loans"
+    logo: "/assets/images/logos/providers/nectar.svg"
+    website: "https://www.nectar.co.nz/"
+    affiliate_url: "#"
+
+    rank: 8
+    bestmoney_score: 8.5
+    is_top_pick: false
+
+    apr_min: 9.95
+    apr_max: 25.95
+    apr_display: "9.95% - 25.95%"
+    loan_amount_min: 2000
+    loan_amount_max: 30000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 25000
+
+    features:
+      - "Fast online application"
+      - "Good for debt consolidation"
+      - "Accepts fair credit"
+
+    tagline: "Straightforward personal loans"
+    bottom_line: "Simple online option for debt consolidation"
+
+    trustpilot_rating: 4.1
+    trustpilot_reviews: 1123
+    weekly_visitors: 1567
+
+    badges: []
+
+    pros:
+      - "Quick approval"
+      - "Fair credit accepted"
+      - "Simple process"
+    cons:
+      - "Lower max loan"
+      - "No branch support"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Regular income"
+      - "Fair credit or better"
+
+  - id: "co-op-money-personal-loan"
+    name: "Co-operative Bank"
+    slug: "co-op-money-personal-loans"
+    logo: "/assets/images/logos/providers/coop.svg"
+    website: "https://www.co-operativebank.co.nz/"
+    affiliate_url: "#"
+
+    rank: 9
+    bestmoney_score: 8.3
+    is_top_pick: false
+
+    apr_min: 12.95
+    apr_max: 19.95
+    apr_display: "12.95% - 19.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 25000
+    loan_term_min: 6
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 20000
+
+    features:
+      - "Customer-owned bank"
+      - "Ethical banking"
+      - "Community focus"
+
+    tagline: "Banking for people, not profit"
+    bottom_line: "Ethical choice for socially conscious borrowers"
+
+    trustpilot_rating: 4.2
+    trustpilot_reviews: 234
+    weekly_visitors: 543
+
+    badges: []
+
+    pros:
+      - "Ethical banking"
+      - "Customer-owned"
+      - "Community focused"
+    cons:
+      - "Lower loan limits"
+      - "Limited branches"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Regular income"
+      - "Good credit"
+
+  - id: "south-canterbury-personal-loan"
+    name: "Heartland Bank"
+    slug: "heartland-personal-loans"
+    logo: "/assets/images/logos/providers/heartland.svg"
+    website: "https://www.heartland.co.nz/"
+    affiliate_url: "#"
+
+    rank: 10
+    bestmoney_score: 8.1
+    is_top_pick: false
+
+    apr_min: 12.95
+    apr_max: 24.95
+    apr_display: "12.95% - 24.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 30000
+    loan_term_min: 6
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 20000
+
+    features:
+      - "Flexible lending criteria"
+      - "Online application"
+      - "Quick decisions"
+
+    tagline: "Helping Kiwis get ahead"
+    bottom_line: "Flexible option for those with varied credit histories"
+
+    trustpilot_rating: 3.7
+    trustpilot_reviews: 456
+    weekly_visitors: 987
+
+    badges: []
+
+    pros:
+      - "Flexible criteria"
+      - "Quick process"
+      - "Online application"
+    cons:
+      - "Higher maximum rates"
+      - "Smaller max loan"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Regular income"
+      - "Fair credit or better"

@@ -1,0 +1,226 @@
+// ==========================================================================
+// Header & Navigation
+// ==========================================================================
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: $z-index-sticky;
+  background: $color-white;
+  border-bottom: 1px solid $color-gray-200;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+}
+
+// Logo
+.site-logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 36px;
+    width: auto;
+  }
+}
+
+// Main Navigation
+.main-nav {
+  display: none;
+
+  @media (min-width: $breakpoint-lg) {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: $spacing-xs;
+}
+
+.nav-item {
+  position: relative;
+
+  &.has-dropdown:hover .nav-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-size-base;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+  text-decoration: none;
+  border-radius: $border-radius-sm;
+  transition: all $transition-fast;
+
+  &:hover {
+    color: $color-accent;
+    background: $color-bg-accent;
+  }
+}
+
+// Dropdown Menu
+.nav-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 220px;
+  background: $color-white;
+  border: 1px solid $color-gray-200;
+  border-radius: $border-radius-md;
+  box-shadow: $shadow-lg;
+  padding: $spacing-sm 0;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all $transition-normal;
+  list-style: none;
+  margin: 0;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-sm;
+    color: $color-text-secondary;
+    text-decoration: none;
+    transition: all $transition-fast;
+
+    &:hover {
+      background: $color-bg-accent;
+      color: $color-primary;
+    }
+  }
+}
+
+// Mobile Menu Toggle
+.mobile-menu-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $breakpoint-lg) {
+    display: none;
+  }
+}
+
+.hamburger {
+  position: relative;
+  width: 24px;
+  height: 2px;
+  background: $color-text-primary;
+  transition: background $transition-fast;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: $color-text-primary;
+    transition: transform $transition-normal;
+  }
+
+  &::before {
+    top: -7px;
+  }
+
+  &::after {
+    bottom: -7px;
+  }
+}
+
+// Mobile menu open state
+.mobile-menu-toggle[aria-expanded="true"] {
+  .hamburger {
+    background: transparent;
+
+    &::before {
+      transform: translateY(7px) rotate(45deg);
+    }
+
+    &::after {
+      transform: translateY(-7px) rotate(-45deg);
+    }
+  }
+}
+
+// Mobile Menu
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: $color-white;
+  border-bottom: 1px solid $color-gray-200;
+  box-shadow: $shadow-lg;
+  padding: $spacing-md;
+  max-height: calc(100vh - 70px);
+  overflow-y: auto;
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.mobile-nav-item {
+  border-bottom: 1px solid $color-gray-100;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.mobile-nav-link {
+  display: block;
+  padding: $spacing-md;
+  font-size: $font-size-md;
+  font-weight: $font-weight-medium;
+  color: $color-text-primary;
+  text-decoration: none;
+}
+
+.mobile-nav-dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 $spacing-md $spacing-md;
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    display: block;
+    padding: $spacing-sm $spacing-md;
+    font-size: $font-size-sm;
+    color: $color-text-muted;
+    text-decoration: none;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}

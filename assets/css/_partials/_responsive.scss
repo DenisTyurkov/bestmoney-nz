@@ -1,0 +1,88 @@
+// ==========================================================================
+// Responsive Utilities & Breakpoint-specific Styles
+// ==========================================================================
+
+// Hide on specific breakpoints
+.hide-mobile {
+  @media (max-width: $breakpoint-md) {
+    display: none !important;
+  }
+}
+
+.hide-desktop {
+  @media (min-width: $breakpoint-md) {
+    display: none !important;
+  }
+}
+
+// Responsive text alignment
+.text-center-mobile {
+  @media (max-width: $breakpoint-md) {
+    text-align: center;
+  }
+}
+
+// Responsive spacing
+.mb-mobile-lg {
+  @media (max-width: $breakpoint-md) {
+    margin-bottom: $spacing-lg;
+  }
+}
+
+// Responsive padding
+.py-mobile-md {
+  @media (max-width: $breakpoint-md) {
+    padding-top: $spacing-md;
+    padding-bottom: $spacing-md;
+  }
+}
+
+// Stack on mobile
+.stack-mobile {
+  @media (max-width: $breakpoint-md) {
+    flex-direction: column;
+  }
+}
+
+// Full width on mobile
+.full-width-mobile {
+  @media (max-width: $breakpoint-md) {
+    width: 100%;
+  }
+}
+
+// Responsive image handling
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+// Touch-friendly targets
+@media (max-width: $breakpoint-md) {
+  .btn,
+  .filter-select,
+  .nav-link {
+    min-height: 44px;
+  }
+}
+
+// Print styles
+@media print {
+  .site-header,
+  .site-footer,
+  .filter-bar,
+  .btn-cta {
+    display: none;
+  }
+
+  .lender-card {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid $color-gray-300;
+  }
+
+  body {
+    font-size: 12pt;
+    color: $color-black;
+  }
+}

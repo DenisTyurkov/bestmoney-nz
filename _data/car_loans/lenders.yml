@@ -1,0 +1,503 @@
+# Car Loans Lenders Data - New Zealand
+vertical: "car-loans"
+last_updated: "2026-01-14"
+
+lenders:
+  - id: "anz-car-loan"
+    name: "ANZ Car Loan"
+    slug: "anz-car-loans"
+    logo: "/assets/images/logos/providers/anz.svg"
+    website: "https://www.anz.co.nz/personal/loans/car-loan/"
+    affiliate_url: "#"
+
+    rank: 1
+    bestmoney_score: 9.5
+    is_top_pick: true
+    is_editors_choice: true
+
+    apr_min: 9.90
+    apr_max: 14.95
+    apr_display: "9.90% - 14.95%"
+    loan_amount_min: 5000
+    loan_amount_max: 100000
+    loan_term_min: 12
+    loan_term_max: 84
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "Secured car loan with lower rates"
+      - "New and used car financing"
+      - "Terms up to 7 years"
+
+    tagline: "Drive away with confidence"
+    bottom_line: "Best overall car loan with competitive secured rates"
+
+    trustpilot_rating: 4.2
+    trustpilot_reviews: 876
+    weekly_visitors: 2134
+
+    badges:
+      - type: "top-pick"
+        label: "Our Top Pick"
+      - type: "best-rate"
+        label: "Best Rates"
+
+    pros:
+      - "Low secured rates"
+      - "High loan amounts"
+      - "Flexible terms"
+    cons:
+      - "Requires vehicle as security"
+      - "Slower approval than online lenders"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Vehicle as security"
+      - "Good credit history"
+
+  - id: "asb-car-loan"
+    name: "ASB Car Loan"
+    slug: "asb-car-loans"
+    logo: "/assets/images/logos/providers/asb.svg"
+    website: "https://www.asb.co.nz/loans/car-loan.html"
+    affiliate_url: "#"
+
+    rank: 2
+    bestmoney_score: 9.3
+    is_top_pick: false
+
+    apr_min: 10.45
+    apr_max: 15.45
+    apr_display: "10.45% - 15.45%"
+    loan_amount_min: 5000
+    loan_amount_max: 80000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 25000
+
+    features:
+      - "Fixed rate security"
+      - "Online application"
+      - "Pre-approval available"
+
+    tagline: "Your car, your way"
+    bottom_line: "Great for buyers who want pre-approval before shopping"
+
+    trustpilot_rating: 4.0
+    trustpilot_reviews: 654
+    weekly_visitors: 1876
+
+    badges:
+      - type: "fast-approval"
+        label: "Quick Pre-approval"
+
+    pros:
+      - "Pre-approval available"
+      - "Fixed rate certainty"
+      - "Good online tools"
+    cons:
+      - "Slightly higher rates"
+      - "5-year max term"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Minimum income $25,000"
+      - "Good credit"
+
+  - id: "westpac-car-loan"
+    name: "Westpac Car Loan"
+    slug: "westpac-car-loans"
+    logo: "/assets/images/logos/providers/westpac.svg"
+    website: "https://www.westpac.co.nz/personal/loans/car-loan/"
+    affiliate_url: "#"
+
+    rank: 3
+    bestmoney_score: 9.1
+    is_top_pick: false
+
+    apr_min: 10.90
+    apr_max: 16.90
+    apr_display: "10.90% - 16.90%"
+    loan_amount_min: 3000
+    loan_amount_max: 100000
+    loan_term_min: 12
+    loan_term_max: 84
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "Loans up to $100,000"
+      - "7-year terms available"
+      - "Existing customer discounts"
+
+    tagline: "Drive your dreams"
+    bottom_line: "Best for high-value vehicles with longer loan terms"
+
+    trustpilot_rating: 3.9
+    trustpilot_reviews: 543
+    weekly_visitors: 1654
+
+    badges: []
+
+    pros:
+      - "High loan limits"
+      - "Long terms"
+      - "Relationship pricing"
+    cons:
+      - "Higher starting rates"
+      - "Slower process"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Vehicle as security"
+      - "Good to excellent credit"
+
+  - id: "kiwibank-car-loan"
+    name: "Kiwibank Car Loan"
+    slug: "kiwibank-car-loans"
+    logo: "/assets/images/logos/providers/kiwibank.svg"
+    website: "https://www.kiwibank.co.nz/personal-banking/loans/"
+    affiliate_url: "#"
+
+    rank: 4
+    bestmoney_score: 8.9
+    is_top_pick: false
+
+    apr_min: 11.50
+    apr_max: 15.50
+    apr_display: "11.50% - 15.50%"
+    loan_amount_min: 2000
+    loan_amount_max: 50000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 25000
+
+    features:
+      - "NZ-owned bank"
+      - "Personal service"
+      - "Competitive rates"
+
+    tagline: "Kiwis helping Kiwis drive"
+    bottom_line: "Good choice for those preferring NZ-owned banking"
+
+    trustpilot_rating: 4.1
+    trustpilot_reviews: 432
+    weekly_visitors: 1234
+
+    badges: []
+
+    pros:
+      - "100% NZ owned"
+      - "Good service"
+      - "Lower minimum"
+    cons:
+      - "Lower max loan"
+      - "5-year max term"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Good credit"
+      - "Regular income"
+
+  - id: "harmoney-car-loan"
+    name: "Harmoney Car Loan"
+    slug: "harmoney-car-loans"
+    logo: "/assets/images/logos/providers/harmoney.svg"
+    website: "https://www.harmoney.co.nz/"
+    affiliate_url: "#"
+
+    rank: 5
+    bestmoney_score: 8.8
+    is_top_pick: false
+
+    apr_min: 8.99
+    apr_max: 24.99
+    apr_display: "8.99% - 24.99%"
+    loan_amount_min: 2000
+    loan_amount_max: 70000
+    loan_term_min: 24
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 25000
+
+    features:
+      - "Lowest starting rates"
+      - "100% online process"
+      - "Unsecured option available"
+
+    tagline: "Fast car finance online"
+    bottom_line: "Best online option with potentially the lowest rates"
+
+    trustpilot_rating: 4.3
+    trustpilot_reviews: 1567
+    weekly_visitors: 2456
+
+    badges:
+      - type: "best-rate"
+        label: "Low Rates"
+
+    pros:
+      - "Rates from 8.99%"
+      - "Fast online approval"
+      - "Unsecured available"
+    cons:
+      - "Higher max rates"
+      - "No branch support"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Fair to excellent credit"
+      - "Regular income"
+
+  - id: "bnz-car-loan"
+    name: "BNZ Car Loan"
+    slug: "bnz-car-loans"
+    logo: "/assets/images/logos/providers/bnz.svg"
+    website: "https://www.bnz.co.nz/personal-banking/loans/car-loan"
+    affiliate_url: "#"
+
+    rank: 6
+    bestmoney_score: 8.7
+    is_top_pick: false
+
+    apr_min: 11.90
+    apr_max: 16.90
+    apr_display: "11.90% - 16.90%"
+    loan_amount_min: 5000
+    loan_amount_max: 75000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "good"
+    min_income: 30000
+
+    features:
+      - "Strong digital banking"
+      - "Pre-approval available"
+      - "Flexible repayments"
+
+    tagline: "Drive with BNZ"
+    bottom_line: "Good for BNZ customers who value digital banking"
+
+    trustpilot_rating: 3.8
+    trustpilot_reviews: 398
+    weekly_visitors: 1123
+
+    badges: []
+
+    pros:
+      - "Great mobile app"
+      - "Pre-approval"
+      - "Flexible terms"
+    cons:
+      - "Higher starting rate"
+      - "5-year max"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Good credit"
+      - "Minimum $30,000 income"
+
+  - id: "mtf-car-loan"
+    name: "MTF Finance"
+    slug: "mtf-car-loans"
+    logo: "/assets/images/logos/providers/mtf.svg"
+    website: "https://www.mtf.co.nz/"
+    affiliate_url: "#"
+
+    rank: 7
+    bestmoney_score: 8.5
+    is_top_pick: false
+
+    apr_min: 10.95
+    apr_max: 22.95
+    apr_display: "10.95% - 22.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 100000
+    loan_term_min: 12
+    loan_term_max: 84
+
+    credit_score_min: "fair"
+    min_income: 20000
+
+    features:
+      - "Specialist car finance"
+      - "Dealer network"
+      - "Flexible criteria"
+
+    tagline: "Car finance specialists"
+    bottom_line: "Good option with flexible lending criteria"
+
+    trustpilot_rating: 3.9
+    trustpilot_reviews: 876
+    weekly_visitors: 1678
+
+    badges: []
+
+    pros:
+      - "Car finance specialist"
+      - "Wide dealer network"
+      - "Fair credit accepted"
+    cons:
+      - "Higher max rates"
+      - "Dealer-focused"
+
+    eligibility:
+      - "NZ citizen or permanent resident"
+      - "Fair credit or better"
+      - "Regular income"
+
+  - id: "oxford-finance-car-loan"
+    name: "Oxford Finance"
+    slug: "oxford-finance-car-loans"
+    logo: "/assets/images/logos/providers/oxford.svg"
+    website: "https://www.oxfordfinance.co.nz/"
+    affiliate_url: "#"
+
+    rank: 8
+    bestmoney_score: 8.3
+    is_top_pick: false
+
+    apr_min: 11.95
+    apr_max: 26.95
+    apr_display: "11.95% - 26.95%"
+    loan_amount_min: 3000
+    loan_amount_max: 60000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 25000
+
+    features:
+      - "Quick decisions"
+      - "Flexible lending"
+      - "New Zealand owned"
+
+    tagline: "Kiwi car finance"
+    bottom_line: "NZ-owned option with flexible lending"
+
+    trustpilot_rating: 3.7
+    trustpilot_reviews: 234
+    weekly_visitors: 876
+
+    badges: []
+
+    pros:
+      - "NZ owned"
+      - "Quick approval"
+      - "Flexible"
+    cons:
+      - "Higher rates possible"
+      - "Less well known"
+
+    eligibility:
+      - "NZ citizen or resident"
+      - "Fair credit"
+      - "Regular income"
+
+  - id: "gem-car-loan"
+    name: "Gem by Latitude"
+    slug: "gem-car-loans"
+    logo: "/assets/images/logos/providers/gem.svg"
+    website: "https://www.gemfinance.co.nz/"
+    affiliate_url: "#"
+
+    rank: 9
+    bestmoney_score: 8.1
+    is_top_pick: false
+
+    apr_min: 12.95
+    apr_max: 24.95
+    apr_display: "12.95% - 24.95%"
+    loan_amount_min: 2000
+    loan_amount_max: 50000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "fair"
+    min_income: 20000
+
+    features:
+      - "Dealer finance option"
+      - "Interest-free periods available"
+      - "Online management"
+
+    tagline: "Drive now, pay smarter"
+    bottom_line: "Good for dealer finance with promotional rates"
+
+    trustpilot_rating: 3.5
+    trustpilot_reviews: 567
+    weekly_visitors: 1234
+
+    badges: []
+
+    pros:
+      - "Dealer partnerships"
+      - "Promotional rates"
+      - "Online account"
+    cons:
+      - "Higher standard rates"
+      - "Promotional complexity"
+
+    eligibility:
+      - "NZ citizen or resident"
+      - "Fair credit"
+      - "Regular income"
+
+  - id: "turners-car-loan"
+    name: "Turners Finance"
+    slug: "turners-car-loans"
+    logo: "/assets/images/logos/providers/turners.svg"
+    website: "https://www.turners.co.nz/Finance/"
+    affiliate_url: "#"
+
+    rank: 10
+    bestmoney_score: 7.9
+    is_top_pick: false
+
+    apr_min: 11.95
+    apr_max: 29.95
+    apr_display: "11.95% - 29.95%"
+    loan_amount_min: 1000
+    loan_amount_max: 50000
+    loan_term_min: 12
+    loan_term_max: 60
+
+    credit_score_min: "poor"
+    min_income: 20000
+
+    features:
+      - "Accepts lower credit scores"
+      - "In-house car dealer"
+      - "One-stop shop"
+
+    tagline: "Finance for everyone"
+    bottom_line: "Good option for those with poor credit"
+
+    trustpilot_rating: 3.4
+    trustpilot_reviews: 789
+    weekly_visitors: 1567
+
+    badges: []
+
+    pros:
+      - "Poor credit accepted"
+      - "Buy and finance together"
+      - "Flexible criteria"
+    cons:
+      - "Higher rates"
+      - "Turners cars only"
+
+    eligibility:
+      - "NZ citizen or resident"
+      - "Any credit considered"
+      - "Proof of income"

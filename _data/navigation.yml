@@ -1,0 +1,45 @@
+main:
+  - title: "Personal Loans"
+    url: "/personal-loans/"
+    children:
+      - title: "Compare Personal Loans"
+        url: "/personal-loans/compare-personal-loans/"
+      - title: "Personal Loan Guides"
+        url: "/guides/personal-loans/"
+
+  - title: "Car Loans"
+    url: "/car-loans/"
+    children:
+      - title: "Compare Car Loans"
+        url: "/car-loans/compare-car-loans/"
+      - title: "Car Loan Guides"
+        url: "/guides/car-loans/"
+
+  - title: "Car Insurance"
+    url: "/car-insurance/"
+    children:
+      - title: "Compare Car Insurance"
+        url: "/car-insurance/compare-car-insurance/"
+      - title: "Car Insurance Guides"
+        url: "/guides/car-insurance/"
+
+footer:
+  company:
+    - title: "About Us"
+      url: "/about/"
+    - title: "Contact"
+      url: "/contact/"
+
+  legal:
+    - title: "Privacy Policy"
+      url: "/privacy-policy/"
+    - title: "Terms of Service"
+      url: "/terms-of-service/"
+    - title: "Disclaimer"
+      url: "/disclaimer/"
+
+  resources:
+    - title: "Financial Guides"
+      url: "/guides/"
+    - title: "FAQ"
+      url: "/faq/"

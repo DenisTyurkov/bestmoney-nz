@@ -1,0 +1,60 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Primary Meta Tags -->
+<title>{% if page.meta_title %}{{ page.meta_title }}{% elsif page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{% if page.meta_description %}{{ page.meta_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Canonical URL -->
+<link rel="canonical" href="{% if page.canonical %}{{ page.canonical }}{% else %}{{ site.url }}{{ page.url }}{% endif %}">
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta property="og:image" content="{% if page.og_image %}{{ site.url }}{{ page.og_image }}{% else %}{{ site.url }}/assets/images/og/default.jpg{% endif %}">
+<meta property="og:locale" content="{{ site.locale }}">
+<meta property="og:site_name" content="{{ site.title }}">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:title" content="{% if page.og_title %}{{ page.og_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+<meta name="twitter:description" content="{% if page.og_description %}{{ page.og_description }}{% elsif page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+<!-- Geo Tags for NZ -->
+<meta name="geo.region" content="NZ">
+<meta name="geo.placename" content="New Zealand">
+
+<!-- Favicon -->
+<link rel="icon" type="image/svg+xml" href="/assets/images/favicon.svg">
+
+<!-- Preconnect for Performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- JSON-LD Organization Schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.url }}/assets/images/logos/bestmoney-nz-logo.svg",
+  "description": "{{ site.description }}",
+  "address": {
+    "@type": "PostalAddress",
+    "addressCountry": "NZ"
+  }
+}
+</script>
+
+{% seo %}

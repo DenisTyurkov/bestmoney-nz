@@ -1,0 +1,89 @@
+# Site Settings
+title: "BestMoney NZ"
+description: "Compare car loans, personal loans, and car insurance in New Zealand. Find the best rates and make confident financial decisions."
+url: "https://bestmoney.co.nz"
+baseurl: ""
+locale: "en-NZ"
+timezone: "Pacific/Auckland"
+
+# Build Settings
+markdown: kramdown
+permalink: pretty
+sass:
+  style: compressed
+  sass_dir: assets/css
+
+# GitHub Pages
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Collections
+collections:
+  providers:
+    output: true
+    permalink: /providers/:path/
+  articles:
+    output: true
+    permalink: /guides/:path/
+
+# Default Front Matter
+defaults:
+  - scope:
+      path: ""
+      type: "providers"
+    values:
+      layout: "provider"
+  - scope:
+      path: ""
+      type: "articles"
+    values:
+      layout: "article"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Exclude from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - README.md
+  - .github
+  - vendor
+
+# Site Data
+currency: "NZD"
+currency_symbol: "$"
+country: "New Zealand"
+country_code: "NZ"
+
+# Brand Colors
+brand:
+  primary: "#225447"
+  accent: "#16CA92"
+  accent_light: "#E8FAF4"
+  text_dark: "#191919"
+  text_medium: "#383838"
+  text_light: "#4C4C4C"
+  background: "#FFFFFF"
+  footer_bg: "#225447"
+
+# Verticals Configuration
+verticals:
+  - name: "Personal Loans"
+    slug: "personal-loans"
+    icon: "personal-loan"
+    description: "Find the best personal loan for your needs"
+    comparison_url: "/personal-loans/compare-personal-loans/"
+  - name: "Car Loans"
+    slug: "car-loans"
+    icon: "car-loan"
+    description: "Compare car loan rates from NZ lenders"
+    comparison_url: "/car-loans/compare-car-loans/"
+  - name: "Car Insurance"
+    slug: "car-insurance"
+    icon: "car-insurance"
+    description: "Compare car insurance quotes in NZ"
+    comparison_url: "/car-insurance/compare-car-insurance/"

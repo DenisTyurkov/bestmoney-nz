@@ -1,0 +1,570 @@
+# Car Insurance Providers Data - New Zealand
+vertical: "car-insurance"
+last_updated: "2026-01-14"
+
+providers:
+  - id: "state-insurance"
+    name: "State Insurance"
+    slug: "state-insurance"
+    logo: "/assets/images/logos/providers/state.svg"
+    website: "https://www.state.co.nz/"
+    affiliate_url: "#"
+
+    rank: 1
+    bestmoney_score: 9.4
+    is_top_pick: true
+    is_editors_choice: true
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$"
+
+    features:
+      - "Agreed value cover available"
+      - "Windscreen cover included"
+      - "Roadside assistance"
+      - "New car replacement (first 2 years)"
+
+    tagline: "Protecting Kiwis for over 100 years"
+    bottom_line: "Best overall coverage with comprehensive add-ons"
+
+    claims_rating: 4.5
+    claims_process: "Online, phone, or app"
+
+    trustpilot_rating: 4.3
+    trustpilot_reviews: 1234
+    weekly_visitors: 2876
+
+    badges:
+      - type: "top-pick"
+        label: "Best Overall"
+
+    discounts:
+      - "Multi-policy discount (up to 10%)"
+      - "No claims bonus"
+      - "Online quote discount"
+
+    pros:
+      - "Comprehensive coverage options"
+      - "Strong claims service"
+      - "Established NZ brand"
+    cons:
+      - "Mid-range pricing"
+      - "Some exclusions apply"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid NZ driver's license"
+
+  - id: "aa-insurance"
+    name: "AA Insurance"
+    slug: "aa-insurance"
+    logo: "/assets/images/logos/providers/aa.svg"
+    website: "https://www.aainsurance.co.nz/"
+    affiliate_url: "#"
+
+    rank: 2
+    bestmoney_score: 9.3
+    is_top_pick: false
+    is_editors_choice: true
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$"
+
+    features:
+      - "AA Roadside assistance included"
+      - "Lifetime repair guarantee"
+      - "Excess-free windscreen"
+      - "AA Member discounts"
+
+    tagline: "Insurance from the experts at AA"
+    bottom_line: "Great value for AA members with roadside benefits"
+
+    claims_rating: 4.4
+    claims_process: "Online, phone, or AA Centre"
+
+    trustpilot_rating: 4.2
+    trustpilot_reviews: 2156
+    weekly_visitors: 3234
+
+    badges:
+      - type: "editors-choice"
+        label: "Editor's Choice"
+
+    discounts:
+      - "AA Member discount"
+      - "Multi-policy discount"
+      - "No claims bonus"
+      - "Online discount"
+
+    pros:
+      - "AA roadside included"
+      - "Member discounts"
+      - "Lifetime repair guarantee"
+    cons:
+      - "Best value requires membership"
+      - "Claims can take time"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid driver's license"
+      - "AA Membership for best rates"
+
+  - id: "tower-insurance"
+    name: "Tower Insurance"
+    slug: "tower-insurance"
+    logo: "/assets/images/logos/providers/tower.svg"
+    website: "https://www.tower.co.nz/"
+    affiliate_url: "#"
+
+    rank: 3
+    bestmoney_score: 9.1
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$"
+
+    features:
+      - "Easy online claims"
+      - "Choice of repairer"
+      - "Rental car cover option"
+      - "Personal effects cover"
+
+    tagline: "Smart insurance for Kiwis"
+    bottom_line: "Modern digital-first insurer with competitive pricing"
+
+    claims_rating: 4.2
+    claims_process: "App, online, or phone"
+
+    trustpilot_rating: 4.0
+    trustpilot_reviews: 1567
+    weekly_visitors: 2456
+
+    badges: []
+
+    discounts:
+      - "Multi-policy discount"
+      - "No claims bonus"
+      - "Low mileage discount"
+
+    pros:
+      - "Good digital experience"
+      - "Competitive pricing"
+      - "Flexible options"
+    cons:
+      - "Fewer branch locations"
+      - "Some limitations apply"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid NZ license"
+
+  - id: "ami-insurance"
+    name: "AMI Insurance"
+    slug: "ami-insurance"
+    logo: "/assets/images/logos/providers/ami.svg"
+    website: "https://www.ami.co.nz/"
+    affiliate_url: "#"
+
+    rank: 4
+    bestmoney_score: 9.0
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$"
+
+    features:
+      - "24/7 claims service"
+      - "Guaranteed repairs"
+      - "Keys and locks cover"
+      - "Personal effects included"
+
+    tagline: "Here when you need us"
+    bottom_line: "Reliable coverage with strong customer service"
+
+    claims_rating: 4.3
+    claims_process: "Online, phone, or branch"
+
+    trustpilot_rating: 4.1
+    trustpilot_reviews: 987
+    weekly_visitors: 1876
+
+    badges: []
+
+    discounts:
+      - "Multi-car discount"
+      - "Combined policy discount"
+      - "No claims bonus"
+
+    pros:
+      - "Good customer service"
+      - "Nationwide branches"
+      - "24/7 claims"
+    cons:
+      - "Not the cheapest"
+      - "Standard coverage"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid NZ license"
+
+  - id: "trademe-insurance"
+    name: "Trade Me Insurance"
+    slug: "trademe-insurance"
+    logo: "/assets/images/logos/providers/trademe.svg"
+    website: "https://www.trademeinsurance.co.nz/"
+    affiliate_url: "#"
+
+    rank: 5
+    bestmoney_score: 8.8
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$"
+
+    features:
+      - "Budget-friendly option"
+      - "Online-only service"
+      - "Simple coverage options"
+      - "Easy quotes"
+
+    tagline: "Simple car insurance online"
+    bottom_line: "Best budget option for basic coverage needs"
+
+    claims_rating: 3.9
+    claims_process: "Online or phone"
+
+    trustpilot_rating: 3.8
+    trustpilot_reviews: 654
+    weekly_visitors: 1654
+
+    badges:
+      - type: "best-rate"
+        label: "Budget Friendly"
+
+    discounts:
+      - "Online discount"
+      - "No claims bonus"
+
+    pros:
+      - "Competitive pricing"
+      - "Simple online process"
+      - "No frills"
+    cons:
+      - "Basic coverage only"
+      - "Limited add-ons"
+      - "Online only"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"
+
+  - id: "youi-insurance"
+    name: "Youi"
+    slug: "youi-insurance"
+    logo: "/assets/images/logos/providers/youi.svg"
+    website: "https://www.youi.co.nz/"
+    affiliate_url: "#"
+
+    rank: 6
+    bestmoney_score: 8.6
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$-$$"
+
+    features:
+      - "Tailored pricing"
+      - "Pay-how-you-drive options"
+      - "Flexible excess"
+      - "24/7 claims"
+
+    tagline: "Insurance that fits you"
+    bottom_line: "Customizable coverage with personalized pricing"
+
+    claims_rating: 4.0
+    claims_process: "Phone or online"
+
+    trustpilot_rating: 3.7
+    trustpilot_reviews: 1234
+    weekly_visitors: 1456
+
+    badges: []
+
+    discounts:
+      - "Personalized pricing"
+      - "No claims bonus"
+      - "Multi-policy"
+
+    pros:
+      - "Tailored pricing"
+      - "Flexible options"
+      - "24/7 service"
+    cons:
+      - "Phone-heavy process"
+      - "Variable reviews"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"
+
+  - id: "cove-insurance"
+    name: "Cove Insurance"
+    slug: "cove-insurance"
+    logo: "/assets/images/logos/providers/cove.svg"
+    website: "https://www.coveinsurance.co.nz/"
+    affiliate_url: "#"
+
+    rank: 7
+    bestmoney_score: 8.4
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$"
+
+    features:
+      - "100% online"
+      - "Quick quotes"
+      - "Modern app"
+      - "Simple claims"
+
+    tagline: "Car insurance, simplified"
+    bottom_line: "Digital-first option for tech-savvy drivers"
+
+    claims_rating: 4.1
+    claims_process: "App or online"
+
+    trustpilot_rating: 4.0
+    trustpilot_reviews: 345
+    weekly_visitors: 987
+
+    badges: []
+
+    discounts:
+      - "Online-only pricing"
+      - "No claims bonus"
+
+    pros:
+      - "Modern experience"
+      - "Quick online process"
+      - "Competitive rates"
+    cons:
+      - "Newer company"
+      - "No phone support"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"
+
+  - id: "vero-insurance"
+    name: "Vero Insurance"
+    slug: "vero-insurance"
+    logo: "/assets/images/logos/providers/vero.svg"
+    website: "https://www.vero.co.nz/"
+    affiliate_url: "#"
+
+    rank: 8
+    bestmoney_score: 8.2
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$-$$$"
+
+    features:
+      - "Premium coverage"
+      - "Broker network"
+      - "Business options"
+      - "Comprehensive claims"
+
+    tagline: "Insurance you can trust"
+    bottom_line: "Premium option often through brokers"
+
+    claims_rating: 4.2
+    claims_process: "Through broker or direct"
+
+    trustpilot_rating: 3.9
+    trustpilot_reviews: 456
+    weekly_visitors: 765
+
+    badges: []
+
+    discounts:
+      - "Broker negotiated"
+      - "No claims bonus"
+
+    pros:
+      - "Comprehensive coverage"
+      - "Established insurer"
+      - "Broker support"
+    cons:
+      - "Higher premiums"
+      - "Less direct"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"
+
+  - id: "nzi-insurance"
+    name: "NZI"
+    slug: "nzi-insurance"
+    logo: "/assets/images/logos/providers/nzi.svg"
+    website: "https://www.nzi.co.nz/"
+    affiliate_url: "#"
+
+    rank: 9
+    bestmoney_score: 8.0
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$$-$$$"
+
+    features:
+      - "Premium options"
+      - "Business focus"
+      - "Fleet options"
+      - "Broker network"
+
+    tagline: "Specialist insurance solutions"
+    bottom_line: "Good for business and premium coverage"
+
+    claims_rating: 4.0
+    claims_process: "Through broker"
+
+    trustpilot_rating: 3.8
+    trustpilot_reviews: 234
+    weekly_visitors: 543
+
+    badges: []
+
+    discounts:
+      - "Broker arranged"
+      - "Fleet discounts"
+
+    pros:
+      - "Business options"
+      - "Fleet coverage"
+      - "Specialist"
+    cons:
+      - "Broker only"
+      - "Not budget"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"
+
+  - id: "warehouse-money-insurance"
+    name: "Warehouse Money"
+    slug: "warehouse-money-insurance"
+    logo: "/assets/images/logos/providers/warehouse.svg"
+    website: "https://www.warehousemoney.co.nz/"
+    affiliate_url: "#"
+
+    rank: 10
+    bestmoney_score: 7.8
+    is_top_pick: false
+
+    coverage_types:
+      - type: "comprehensive"
+        available: true
+      - type: "third-party-fire-theft"
+        available: true
+      - type: "third-party"
+        available: true
+
+    price_range: "$"
+
+    features:
+      - "Value pricing"
+      - "Online quotes"
+      - "Basic coverage"
+      - "Simple process"
+
+    tagline: "Value insurance for Kiwis"
+    bottom_line: "Budget option from a trusted NZ brand"
+
+    claims_rating: 3.6
+    claims_process: "Phone or online"
+
+    trustpilot_rating: 3.5
+    trustpilot_reviews: 321
+    weekly_visitors: 876
+
+    badges: []
+
+    discounts:
+      - "Value pricing"
+      - "No claims bonus"
+
+    pros:
+      - "Budget friendly"
+      - "Trusted brand"
+      - "Simple"
+    cons:
+      - "Basic coverage"
+      - "Limited features"
+
+    eligibility:
+      - "NZ registered vehicle"
+      - "Valid license"

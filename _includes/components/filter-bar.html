@@ -1,0 +1,76 @@
+{% comment %}
+  Filter Bar Component
+  Usage: {% include components/filter-bar.html vertical="personal_loans" %}
+{% endcomment %}
+
+<div class="filter-bar" data-vertical="{{ include.vertical }}">
+  <form class="filter-form" id="comparison-filters">
+
+    {% if include.vertical contains 'loans' %}
+    <!-- Loan Amount -->
+    <div class="filter-group">
+      <label for="filter-amount">Loan Amount</label>
+      <select id="filter-amount" name="amount" class="filter-select">
+        <option value="">Any Amount</option>
+        <option value="0-5000">$0 - $5,000</option>
+        <option value="5000-10000">$5,000 - $10,000</option>
+        <option value="10000-25000">$10,000 - $25,000</option>
+        <option value="25000-50000">$25,000 - $50,000</option>
+        <option value="50000+">$50,000+</option>
+      </select>
+    </div>
+
+    <!-- Annual Income -->
+    <div class="filter-group">
+      <label for="filter-income">Annual Income</label>
+      <select id="filter-income" name="income" class="filter-select">
+        <option value="">Any Income</option>
+        <option value="0-30000">Under $30,000</option>
+        <option value="30000-50000">$30,000 - $50,000</option>
+        <option value="50000-75000">$50,000 - $75,000</option>
+        <option value="75000-100000">$75,000 - $100,000</option>
+        <option value="100000+">$100,000+</option>
+      </select>
+    </div>
+
+    <!-- Credit Score -->
+    <div class="filter-group">
+      <label for="filter-credit">Credit Score</label>
+      <select id="filter-credit" name="credit" class="filter-select">
+        <option value="">Any Credit</option>
+        <option value="excellent">Excellent (800+)</option>
+        <option value="good">Good (670-799)</option>
+        <option value="fair">Fair (580-669)</option>
+        <option value="poor">Poor (Below 580)</option>
+      </select>
+    </div>
+    {% endif %}
+
+    {% if include.vertical == 'car_insurance' %}
+    <!-- Coverage Type -->
+    <div class="filter-group">
+      <label for="filter-coverage">Coverage Type</label>
+      <select id="filter-coverage" name="coverage" class="filter-select">
+        <option value="">Any Coverage</option>
+        <option value="comprehensive">Comprehensive</option>
+        <option value="third-party-fire-theft">Third Party, Fire & Theft</option>
+        <option value="third-party">Third Party Only</option>
+      </select>
+    </div>
+
+    {% endif %}
+
+    <!-- Reset Button -->
+    <div class="filter-group filter-actions">
+      <button type="reset" class="btn btn-ghost">Clear All</button>
+    </div>
+  </form>
+
+  <!-- Mobile Filter Toggle -->
+  <button class="filter-toggle-mobile" aria-expanded="false" aria-controls="comparison-filters">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" width="16" height="16">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 4a1 1 0 011-1h16a1 1 0 011 1v2.586a1 1 0 01-.293.707l-6.414 6.414a1 1 0 00-.293.707V17l-4 4v-6.586a1 1 0 00-.293-.707L3.293 7.293A1 1 0 013 6.586V4z" />
+    </svg>
+    Refine Results
+  </button>
+</div>

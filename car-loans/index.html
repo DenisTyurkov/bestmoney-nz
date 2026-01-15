@@ -1,0 +1,64 @@
+---
+layout: default
+title: "Car Loans NZ"
+description: "Compare car loans from New Zealand's top lenders. Find competitive rates for new and used cars."
+permalink: /car-loans/
+---
+
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <h1 class="page-hero-title">Car Loans NZ</h1>
+      <p class="page-hero-subtitle">Compare rates from New Zealand's leading car loan providers</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <h2>Find the Right Car Loan for You</h2>
+      <p>Whether you're buying a new car from a dealer or a used car privately, we'll help you compare options and find the best rate.</p>
+      <a href="/car-loans/compare-car-loans/" class="btn btn-primary btn-lg" style="margin-top: 1rem;">
+        Compare Car Loans
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Top Car Loan Providers</h2>
+    <div class="lender-list preview">
+      {% assign car_loans = site.data.car_loans.lenders.lenders | slice: 0, 5 %}
+      {% for lender in car_loans %}
+        {% include components/lender-card.html lender=lender rank=forloop.index show_rank=true %}
+      {% endfor %}
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/car-loans/compare-car-loans/" class="btn btn-secondary">
+        View All 10 Lenders
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div style="max-width: 800px; margin: 0 auto;">
+      <h2>Car Loan Tips for Kiwis</h2>
+
+      <h3>Get Pre-Approved First</h3>
+      <p>Before you start car shopping, get pre-approved for a loan. This tells you your budget and gives you negotiating power at the dealer. Most banks offer quick pre-approval online.</p>
+
+      <h3>Secured vs Unsecured</h3>
+      <p>Secured loans use the car as collateral and offer lower rates. Unsecured loans are more flexible but cost more. For most buyers, secured is the better choice.</p>
+
+      <h3>Watch the Total Cost</h3>
+      <p>A longer loan term means lower payments but more interest paid overall. Use our comparison to see the true cost of each option, not just the monthly payment.</p>
+
+      <h3>Consider Your Options</h3>
+      <p>Don't just accept dealer finance - compare it with bank loans first. Dealers may offer promotional rates on new cars, but bank loans often beat standard dealer rates.</p>
+    </div>
+  </div>
+</section>
