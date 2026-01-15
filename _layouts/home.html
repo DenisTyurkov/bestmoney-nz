@@ -91,4 +91,46 @@ body_class: "page-home"
   </div>
 </section>
 
+<!-- Top Car Loans Preview -->
+<section class="section section--gray">
+  <div class="container">
+    <h2 class="section-title">Top Car Loan Providers in NZ</h2>
+    <p class="section-subtitle">Compare rates from New Zealand's leading car loan providers</p>
+
+    <div class="lender-list preview">
+      {% assign car_loans = site.data.car_loans.lenders.lenders | slice: 0, 3 %}
+      {% for lender in car_loans %}
+        {% include components/lender-card.html lender=lender rank=forloop.index show_rank=true compact=true %}
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/car-loans/compare-car-loans/" class="btn btn-primary btn-lg">
+        View All Car Loans
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Top Car Insurance Preview -->
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Top Car Insurance Providers in NZ</h2>
+    <p class="section-subtitle">Compare coverage from New Zealand's leading car insurance providers</p>
+
+    <div class="lender-list preview">
+      {% assign car_insurance = site.data.car_insurance.providers.providers | slice: 0, 3 %}
+      {% for provider in car_insurance %}
+        {% include components/insurance-card.html provider=provider rank=forloop.index show_rank=true compact=true %}
+      {% endfor %}
+    </div>
+
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="/car-insurance/compare-car-insurance/" class="btn btn-primary btn-lg">
+        View All Car Insurance
+      </a>
+    </div>
+  </div>
+</section>
+
 {{ content }}
